@@ -15,6 +15,6 @@ export default function Shell({children}:{children:React.ReactNode}) {
  </nav>
  </header>
  <main id="conteudo" tabIndex={-1}>{children}</main>
- <footer><a href="/" aria-label="CIMATEC Finance, início"><img className="brand-image" src="/brand/logo.svg" alt="CIMATEC Finance" width="78" height="65"/></a><p>Iniciativa estudantil do SENAI CIMATEC · Salvador, Bahia</p><a href="/conexoes/#contato">Contato</a></footer>
+ <footer><a href="/" aria-label="CIMATEC Finance, início"><img className="brand-image" src="/brand/logo.svg" alt="CIMATEC Finance" width="78" height="65"/></a><p>CIMATEC Finance</p><a href="/conexoes/#contato">Contato</a></footer>
  </>;
 }

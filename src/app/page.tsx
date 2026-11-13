@@ -6,12 +6,12 @@ import ContactCTA from "./contact-cta";
 export default function Home(){
  const [paused,setPaused]=useState(false);
  return <>      <section id="inicio" className={`hero ${paused ? "paused" : ""}`}>
-        <div className="hero-top"><span>BAHIA, BRASIL</span><span>INICIATIVA ESTUDANTIL · SENAI CIMATEC</span></div>
+        
         <div className="hero-body">
-          <div className="hero-copy"><p className="eyebrow">CONHECIMENTO QUE CONECTA</p><h1>O próximo<br />movimento<br />começa <em>aqui.</em></h1><p className="hero-description">Uma nova perspectiva sobre o mercado financeiro.<br />Da universidade para as conexões que ampliam horizontes.</p><a className="text-link" href="#sobre">Conheça a CIMATEC Finance <span aria-hidden="true">↓</span></a></div>
-          <div className="hero-art" aria-hidden="true"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="orbit orbit-three" /><div className="art-axis" /><div className="art-caption">PENSAMENTO ANALÍTICO<br />VISÃO DE FUTURO</div><div className="art-cross">+</div></div>
+          <div className="hero-copy"><h1>O próximo<br />movimento<br />começa <em>aqui.</em></h1><p className="hero-description">Uma nova perspectiva sobre o mercado financeiro.<br />Da universidade para as conexões que ampliam horizontes.</p><a className="text-link" href="#sobre">Conheça a CIMATEC Finance <span aria-hidden="true">↓</span></a></div>
+          <div className="hero-art" aria-hidden="true"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="orbit orbit-three" /><div className="art-axis" /></div>
         </div>
-        <div className="hero-bottom"><span>FINANÇAS / TECNOLOGIA / CONEXÕES</span><button onClick={() => setPaused(!paused)} aria-pressed={paused}>{paused ? "Retomar movimento" : "Pausar movimento"}</button><span className="scroll-note">EXPLORE <span aria-hidden="true">↓</span></span></div>
+        <div className="hero-bottom"><button onClick={() => setPaused(!paused)} aria-pressed={paused}>{paused ? "Retomar movimento" : "Pausar movimento"}</button></div>
       </section>
  <section id="sobre" className="section home-about" aria-labelledby="sobre-title">
    <h2 id="sobre-title">Sobre a CIMATEC Finance</h2>
@@ -30,7 +30,7 @@ export default function Home(){
    <ContactCTA />
  </section>
  <section className="section home-newsletter" aria-labelledby="home-newsletter-title">
-   <p className="eyebrow">CIMATEC FINANCE MAIL</p>
+   
    <h2 id="home-newsletter-title">Newsletter da CIMATEC Finance</h2>
    <p>Panorama de mercado, relatórios e novidades da liga, reunidos para leitura por e-mail.</p>
    <a className="newsletter-button" href="/newsletter/">Conheça a newsletter <span aria-hidden="true">↗</span></a>
