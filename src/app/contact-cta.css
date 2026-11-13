@@ -1,0 +1,13 @@
+.league-contact-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+.league-contact-actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: .65rem 1rem;
+  border: 1px solid #d5b776;
+  color: #f2eee4;
+  overflow-wrap: anywhere;
+}
+.league-contact-actions a:first-child { background: #d5b776; color: #101312; font-weight: 600; }
+.league-contact-actions a:hover { text-decoration: underline; }
+.league-contact p { margin-top: .75rem; color: #c9c8bf; }

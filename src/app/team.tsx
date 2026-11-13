@@ -8,7 +8,7 @@ type Profile = {
 };
 
 const leadership: Profile[] = [
-  { role: "Presidência", description: "Define prioridades e representa a liga institucionalmente." },
+  { name: "Bernardo Almeida", role: "Presidência", description: "Define prioridades e representa a liga institucionalmente." },
   { role: "Vice-presidência", description: "Apoia a presidência e articula o trabalho entre as áreas." },
 ];
 

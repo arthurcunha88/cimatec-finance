@@ -1,6 +1,7 @@
 "use client";
 import {useState} from "react";
 import Team from "./team";
+import ContactCTA from "./contact-cta";
 export default function Home(){
  const [paused,setPaused]=useState(false);
  return <>      <section id="inicio" className={`hero ${paused ? "paused" : ""}`}>
@@ -22,5 +23,9 @@ export default function Home(){
 <a href="/newsletter/">Newsletter<span aria-hidden="true">↗</span></a>
 <a href="/conexoes/">Conexões<span aria-hidden="true">↗</span></a></div></section>
  <Team />
+ <section className="section contact" aria-labelledby="home-contact-title">
+   <h2 id="home-contact-title">Entre em contato com a liga</h2>
+   <ContactCTA />
+ </section>
  </>;
 }
