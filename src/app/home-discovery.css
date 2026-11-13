@@ -32,3 +32,14 @@
 .home-newsletter .newsletter-button { display: inline-flex; gap: 1rem; }
 @media (max-width: 700px) { .areas-track { grid-auto-columns: 86%; } }
 @media (prefers-reduced-motion: reduce) { .areas-track { scroll-behavior: auto; } }
+
+.home-areas, .areas-track { min-width: 0; }
+.area-card { min-width: 0; border: 1px solid #655638; border-top: 2px solid #d5b776; border-radius: 12px; overflow-wrap: anywhere; }
+.area-card h3 { font-size: clamp(1.15rem, 2.5vw, 1.65rem); }
+.home-newsletter { background: #222724; }
+.home-newsletter .newsletter-button { background: #d5b776; color: #101312; font-weight: 700; min-height: 50px; padding: .85rem 1.25rem; align-items: center; border: 1px solid #f2eee4; }
+.home-newsletter .newsletter-button:hover { background: #f2eee4; }
+@media (max-width: 600px) {
+  .areas-heading { flex-wrap: wrap; }
+  .areas-track { grid-auto-columns: 88%; }
+}

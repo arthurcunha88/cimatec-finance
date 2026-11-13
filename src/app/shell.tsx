@@ -1,6 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import SiteFooter from "./site-footer";
 const routes = [["/","Início"],["/iniciativa/","Iniciativa"],["/atuacao/","Atuação"],["/relatorios/","Relatórios"],["/newsletter/","Newsletter"],["/conexoes/","Conexões"]];
 export default function Shell({children}:{children:React.ReactNode}) {
  const path = usePathname();
@@ -15,6 +16,6 @@ export default function Shell({children}:{children:React.ReactNode}) {
  </nav>
  </header>
  <main id="conteudo" tabIndex={-1}>{children}</main>
- <footer><a href="/" aria-label="CIMATEC Finance, início"><img className="brand-image" src="/brand/logo.svg" alt="CIMATEC Finance" width="78" height="65"/></a><p>CIMATEC Finance</p><a href="/conexoes/#contato">Contato</a></footer>
+ <SiteFooter />
  </>;
 }

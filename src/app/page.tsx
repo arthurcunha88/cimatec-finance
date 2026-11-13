@@ -16,6 +16,7 @@ export default function Home(){
  <section id="sobre" className="section home-about" aria-labelledby="sobre-title">
    <h2 id="sobre-title">Sobre a CIMATEC Finance</h2>
    <p>Somos uma liga estudantil do SENAI CIMATEC, em Salvador. Aproximamos universitários da Bahia do mercado financeiro por meio de formação, projetos e conexões com profissionais do setor.</p>
+   <p>Na liga, os membros desenvolvem repertório em finanças por meio de estudos de mercado, análises de empresas e projetos em equipe. As frentes de atuação conectam essa formação à prática, da análise de dados à divulgação do conhecimento produzido.</p>
    <a className="text-link" href="/iniciativa/">Conheça a iniciativa <span aria-hidden="true">↗</span></a>
  </section>
  <AreaCarousel />
@@ -33,7 +34,7 @@ export default function Home(){
    
    <h2 id="home-newsletter-title">Newsletter da CIMATEC Finance</h2>
    <p>Panorama de mercado, relatórios e novidades da liga, reunidos para leitura por e-mail.</p>
-   <a className="newsletter-button" href="/newsletter/">Conheça a newsletter <span aria-hidden="true">↗</span></a>
+   <a className="newsletter-button" href="/newsletter/">Acompanhe a newsletter <span aria-hidden="true">↗</span></a>
  </section>
  </>;
 }

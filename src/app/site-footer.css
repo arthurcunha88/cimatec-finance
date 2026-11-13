@@ -1,0 +1,10 @@
+.site-footer { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 1.25rem; padding: .9rem clamp(1rem, 5vw, 5rem); border-top: 1px solid #655638; background: #101312; color: #f2eee4; }
+.footer-brand, .site-footer nav a { display: inline-flex; align-items: center; gap: .55rem; }
+.footer-brand img { object-fit: contain; }
+.site-footer nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 0 1.25rem; }
+.site-footer nav a { min-height: 44px; color: #f2eee4; font-size: .875rem; }
+.site-footer nav a:first-child { color: #d5b776; font-weight: 700; }
+.site-footer a:hover { text-decoration: underline; }
+.footer-senai { display: block; width: 108px; aspect-ratio: 300 / 132; background: #f2eee4; mask: url("/brand/senai-cimatec.png") center / contain no-repeat; }
+@media (max-width: 900px) { .site-footer { grid-template-columns: 1fr auto; gap: .35rem 1rem; } .site-footer nav { grid-row: 2; grid-column: 1 / -1; justify-content: flex-start; } }
+@media (max-width: 370px) { .footer-senai { width: 80px; } .site-footer nav { gap: 0 .85rem; } }
