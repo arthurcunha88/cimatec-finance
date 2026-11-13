@@ -8,3 +8,19 @@
 .footer-senai { display: block; width: 108px; aspect-ratio: 300 / 132; background: #f2eee4; mask: url("/brand/senai-cimatec.png") center / contain no-repeat; }
 @media (max-width: 900px) { .site-footer { grid-template-columns: 1fr auto; gap: .35rem 1rem; } .site-footer nav { grid-row: 2; grid-column: 1 / -1; justify-content: flex-start; } }
 @media (max-width: 370px) { .footer-senai { width: 80px; } .site-footer nav { gap: 0 .85rem; } }
+
+.site-footer nav .footer-icon {
+  justify-content: center;
+  width: 44px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+.site-footer nav .footer-icon:hover,
+.site-footer nav .footer-icon:focus-visible {
+  color: #d5b776;
+  background: #222724;
+  border-color: #d5b776;
+}
+@media (max-width: 600px) { .site-footer nav { column-gap: .25rem; } }
+@media (prefers-reduced-motion: reduce) { .site-footer nav .footer-icon { transition: none; } }

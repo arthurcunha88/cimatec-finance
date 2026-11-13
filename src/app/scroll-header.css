@@ -1,0 +1,11 @@
+.header.scroll-header {
+  position: sticky;
+  top: 0;
+  transition: transform 520ms cubic-bezier(.22, .61, .36, 1);
+}
+.header.scroll-header[data-hidden="true"]:not(:focus-within) {
+  transform: translateY(-100%);
+}
+@media (prefers-reduced-motion: reduce) {
+  .header.scroll-header { transition: none; }
+}
