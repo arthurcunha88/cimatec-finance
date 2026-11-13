@@ -16,7 +16,11 @@ Instale as dependências com `pnpm install` ou `npm install`. Inicie com `pnpm d
 
 Validação: `pnpm typecheck` e `pnpm build`. A exportação estática é gerada em `out/`.
 
-## Estado da entrega
+## Deploy na Vercel
+
+Importe `arthurcunha88/cimatec-finance`, selecione o preset Next.js e mantenha a raiz do projeto em `./`. O comando de build é `pnpm build`. O projeto utiliza `output: 'export'` e gera arquivos estáticos em `out/`. Não há variáveis de ambiente obrigatórias para a versão atual; `NEXT_PUBLIC_NEWSLETTER_URL` é opcional. A publicação será realizada pelo responsável na Vercel.
+
+## Validação e pendências
 
 Dependências instaladas. Compilação de produção e verificação TypeScript aprovadas. A revisão visual no navegador e a publicação continuam pendentes.
 
