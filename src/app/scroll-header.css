@@ -13,13 +13,19 @@
 .header-brand { display: inline-flex; align-items: center; gap: .65rem; flex-shrink: 0; }
 .header .header-brand .brand-image { width: 56px; height: 56px; }
 .header-wordmark { display: inline-flex; align-items: baseline; gap: .4em; white-space: nowrap; }
-.header-wordmark > span { color: #f2eee4; font-size: .88rem; font-weight: 700; letter-spacing: .12em; }
-.header-wordmark em { font-family: var(--serif, Georgia, serif); color: #d5b776; font-size: 1.75rem; line-height: 1; }
+.header-wordmark {
+  font-family: var(--serif, Georgia, serif);
+  font-size: clamp(1rem, 2vw, 1.45rem);
+  font-weight: 400;
+  line-height: 1;
+  color: #ebc857;
+  letter-spacing: .035em;
+}
+.header-wordmark em { font-style: normal; }
 @media (max-width: 1050px) and (min-width: 701px) {
   .header-wordmark { flex-direction: column; gap: .15rem; }
 }
 @media (max-width: 420px) {
   .header .header-brand .brand-image { width: 42px; height: 42px; }
-  .header-wordmark > span { font-size: .73rem; }
-  .header-wordmark em { font-size: 1.4rem; }
+
 }
