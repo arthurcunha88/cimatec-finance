@@ -12,14 +12,15 @@
 
 .header-brand { display: inline-flex; align-items: center; gap: .65rem; flex-shrink: 0; }
 .header .header-brand .brand-image { width: 56px; height: 56px; }
-.header-wordmark { display: inline-flex; align-items: baseline; gap: .4em; white-space: nowrap; }
 .header-wordmark {
-  font-family: var(--serif, Georgia, serif);
-  font-size: clamp(1rem, 2vw, 1.45rem);
-  font-weight: 400;
-  line-height: 1;
-  color: #ebc857;
-  letter-spacing: .035em;
+  display: inline-flex;
+  align-items: baseline;
+  gap: .35em;
+  white-space: nowrap;
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #c9c8bf;
 }
 .header-wordmark em { font-style: normal; }
 @media (max-width: 1050px) and (min-width: 701px) {
@@ -27,5 +28,5 @@
 }
 @media (max-width: 420px) {
   .header .header-brand .brand-image { width: 42px; height: 42px; }
-
+  .header-wordmark { font-size: .8rem; }
 }
