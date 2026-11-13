@@ -41,8 +41,8 @@ export default function SiteFooter() {
           </svg>
         </button>
         <span className="footer-copy-status" role="status">
-          {copyStatus === "copied" && "E-mail copiado"}
-          {copyStatus === "failed" && "Copie manualmente: cimatecfinance@gmail.com"}
+          {copyStatus === "copied" && <span className="footer-toast"><span aria-hidden="true">✓</span> E-mail copiado</span>}
+          {copyStatus === "failed" && <span className="footer-toast footer-toast-error">Copie manualmente: {emailAddress}</span>}
         </span>
       </nav>
       <span className="footer-senai" role="img" aria-label="SENAI CIMATEC Universidade" />

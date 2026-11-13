@@ -43,3 +43,30 @@
   .areas-heading { flex-wrap: wrap; }
   .areas-track { grid-auto-columns: 100%; }
 }
+
+.areas-track { scrollbar-width: none; gap: 1rem; padding: .25rem 0 .85rem; }
+.areas-track::-webkit-scrollbar { display: none; }
+.area-controls button { border-radius: 50%; transition: background-color .2s, color .2s; }
+.area-card {
+  --card-surface: #252e27;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1.35rem, 3.6vw, 3rem);
+  border: 1px solid #786545;
+  border-radius: 20px;
+  background: linear-gradient(155deg, var(--card-surface), #171b18 85%);
+}
+.area-card:nth-child(2) { --card-surface: #383026; }
+.area-card:nth-child(3) { --card-surface: #273035; }
+.area-card:nth-child(4) { --card-surface: #353033; }
+.area-card h3 {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3.7vw, 3.4rem);
+  font-weight: 400;
+  line-height: 1.05;
+  margin: 0 0 1rem;
+}
+.area-card p { max-width: 50ch; margin: 0 0 1.75rem; line-height: 1.65; }
+.area-topics { list-style: none; padding: 0; margin: auto 0 0; }
+.area-topics li { padding: .55rem 0; border-top: 1px solid #d5b77644; }
+@media (prefers-reduced-motion: reduce) { .area-controls button { transition: none; } }
