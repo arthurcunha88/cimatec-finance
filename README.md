@@ -24,7 +24,7 @@ Importe `arthurcunha88/cimatec-finance`, selecione o preset Next.js e mantenha a
 
 Dependências instaladas. Compilação de produção e verificação TypeScript aprovadas. A revisão visual no navegador e a publicação continuam pendentes.
 
-A logo original não pôde ser baixada. O cabeçalho usa uma identificação tipográfica provisória, a substituir pela marca fornecida. As fotografias permanecem em branco por orientação do projeto. As fontes Google possuem fallbacks locais.
+A logo original está em `public/brand/logo.png` e é utilizada no cabeçalho e no rodapé, com proporções preservadas. As fotografias permanecem em branco por orientação do projeto. As fontes Google possuem fallbacks locais.
 
 ## Direção
 

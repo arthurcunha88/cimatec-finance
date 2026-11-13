@@ -29,7 +29,7 @@ export default function Home() {
   return <>
     <a className="skip" href="#conteudo">Pular para o conteúdo</a>
     <header className="header">
-      <a className="brand" href="#inicio" aria-label="CIMATEC Finance — início"><span>CIMATEC</span><span>FINANCE<span className="brand-dot">.</span></span></a>
+      <a className="brand" href="#inicio" aria-label="CIMATEC Finance — início"><img className="brand-image" src="/brand/logo.png" alt="CIMATEC Finance" width={96} height={80} /></a>
       <button className="menu-toggle" aria-expanded={menu} aria-controls="navigation" onClick={() => setMenu(!menu)}>{menu ? "Fechar −" : "Menu +"}</button>
       <nav id="navigation" aria-label="Navegação principal" className={menu ? "nav open" : "nav"} onKeyDown={event => { if (event.key === "Escape") { setMenu(false); document.querySelector<HTMLButtonElement>(".menu-toggle")?.focus(); } }}>
         {navigation.map(([id, label]) => <a key={id} href={`#${id}`} aria-current={active === id ? "location" : undefined} onClick={() => setMenu(false)}>{label}</a>)}
@@ -60,6 +60,6 @@ export default function Home() {
       <section className="section contact" id="contato"><p className="eyebrow">07 / FAÇA PARTE DA CONVERSA</p><div className="contact-heading"><h2>Seu próximo passo.<br /><em>Nossa próxima conexão.</em></h2><span className="contact-arrow" aria-hidden="true">↗</span></div><div className="contact-options"><a href={contact("Olá! Sou estudante e gostaria de conhecer a CIMATEC Finance e as possibilidades de participação.")} target="_blank" rel="noopener noreferrer"><span className="eyebrow">PARA ESTUDANTES</span><h3>Quero me aproximar <Arrow /></h3><p>Conheça a iniciativa e converse sobre possibilidades de participação.</p></a><a href={contact("Olá! Represento uma empresa e gostaria de conversar com a CIMATEC Finance sobre possibilidades de aproximação.")} target="_blank" rel="noopener noreferrer"><span className="eyebrow">PARA EMPRESAS E PROFISSIONAIS</span><h3>Vamos conversar <Arrow /></h3><p>Abra um diálogo sobre conhecimento, eventos e conexões com universitários.</p></a></div><div className="direct-contact"><span>CONTATO DIRETO</span><a href="tel:+5571996692006">(71) 99669-2006</a><span>As conversas são iniciadas pelo WhatsApp.</span></div></section>
 
     </main>
-    <footer><a className="brand" href="#inicio"><span>CIMATEC</span><span>FINANCE<span className="brand-dot">.</span></span></a><p>Iniciativa estudantil do SENAI CIMATEC.<br />Salvador, Bahia.</p><a href="#inicio">Voltar ao início ↑</a></footer>
+    <footer><a className="brand" href="#inicio"><img className="brand-image" src="/brand/logo.png" alt="CIMATEC Finance" width={96} height={80} /></a><p>Iniciativa estudantil do SENAI CIMATEC.<br />Salvador, Bahia.</p><a href="#inicio">Voltar ao início ↑</a></footer>
   </>;
 }
