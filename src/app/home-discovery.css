@@ -13,7 +13,7 @@
 .areas-track {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 46%;
+  grid-auto-columns: calc((100% - 1rem) / 2);
   gap: 1rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -30,7 +30,7 @@
 .home-newsletter { background: #191d1b; border-top: 1px solid #d5b776; }
 .home-newsletter p:not(.eyebrow) { max-width: 55ch; color: #c9c8bf; margin: 1rem 0; }
 .home-newsletter .newsletter-button { display: inline-flex; gap: 1rem; }
-@media (max-width: 700px) { .areas-track { grid-auto-columns: 86%; } }
+@media (max-width: 767px) { .areas-track { grid-auto-columns: 100%; } }
 @media (prefers-reduced-motion: reduce) { .areas-track { scroll-behavior: auto; } }
 
 .home-areas, .areas-track { min-width: 0; }
@@ -41,5 +41,5 @@
 .home-newsletter .newsletter-button:hover { background: #f2eee4; }
 @media (max-width: 600px) {
   .areas-heading { flex-wrap: wrap; }
-  .areas-track { grid-auto-columns: 88%; }
+  .areas-track { grid-auto-columns: 100%; }
 }

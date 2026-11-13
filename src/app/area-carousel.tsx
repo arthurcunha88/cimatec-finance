@@ -24,7 +24,11 @@ export default function AreaCarousel() {
           <button type="button" aria-controls="areas-track" aria-label="Próxima área" onClick={() => move(1)}>→</button>
         </div>
       </div>
-      <ul id="areas-track" className="areas-track" ref={track} tabIndex={0} aria-label="Áreas de atuação, lista com rolagem horizontal">
+      <ul id="areas-track" className="areas-track" ref={track} tabIndex={0} aria-label="Áreas de atuação, lista com rolagem horizontal" onKeyDown={(event) => {
+        if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+        event.preventDefault();
+        move(event.key === "ArrowRight" ? 1 : -1);
+      }}>
         {fronts.map((area) => (
           <li className="area-card" key={area.name}>
             <h3>{area.name}</h3>
