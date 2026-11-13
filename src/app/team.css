@@ -1,0 +1,25 @@
+.home-about, .alumni { background: #191d1b; }
+.team { background: #222724; }
+.home-about p { max-width: 66ch; margin-top: 1.5rem; }
+.team h3 { margin-top: 2.5rem; color: var(--gold); }
+.profile-grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr));
+  gap: 1.75rem;
+}
+.profile-grid li { border-top: 1px solid var(--line); padding-top: 1.5rem; }
+.profile-photo {
+  display: block;
+  width: 112px;
+  height: 112px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  background: #101312;
+}
+.profile-name { min-height: 1.5em; margin: .75rem 0 .35rem; }
+.profile-name-slot { display: inline-block; width: 6rem; border-bottom: 1px solid var(--line); }
+.profile-grid h4 { color: var(--gold); margin: 0 0 .5rem; }
+.profile-grid li > p:last-child { max-width: 32ch; color: #c9c8bf; }
