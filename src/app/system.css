@@ -1,0 +1,16 @@
+:root{--ink:#111413;--paper:#101312;--gold:#d5b776;--line:#494438;--muted:#bdc1b9}
+body,.header,.hero,.contact{background:var(--paper);color:#f2eee4}
+.about,.reports,.connections,.portal{background:#191d1b;color:#f2eee4}
+.work,.newsletter,.experience{background:#222724;color:#f2eee4}
+.header{color:#f2eee4}.nav a{color:#f2eee4}.nav-contact{color:#f2eee4}.nav.open{background:#191d1b}
+.header .brand-image,footer .brand-image{width:110px;height:64px;object-fit:contain}
+.page-title,.section h2{font-family:var(--serif);font-size:clamp(43px,5vw,76px);line-height:1.08;font-weight:400;margin:0}
+.section h2 em,.page-title em,.section .eyebrow{color:var(--gold)}
+.about-copy,.lead,.signature strong span,.section-intro,.front-content,.front-index,.front-index span,.front-tabs button>span:first-child,.experience-text p,.experience-text>span,.connection-top>p,.connection-note,.report-count,.reports-empty p,.newsletter-topics,.newsletter-join p,.report-list .report-authors,.dark-link,.report-search input,.empty-symbol{color:#c9c8bf}
+.front-tabs button[aria-selected=true],.report-filters button[aria-pressed=true]{background:#393428;color:#fff1cc;border-color:var(--gold)}
+.front-tabs,.front-content li,.report-filters button,.report-search input,.newsletter-join,.newsletter-topics span{border-color:var(--line)}
+.photo{background:#111413;border-color:var(--line);color:#bcb9ac}
+.newsletter-button{background:var(--gold);color:#141611}.newsletter-button:hover{background:#ecd19a}
+.reset-filters{border-color:var(--gold)}
+.skip{background:#d5b776;color:#111413}
+.portal-links{display:grid;margin-top:38px}.portal-links a{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--line)}.portal-links a span{color:var(--gold)}
