@@ -4,5 +4,5 @@ import './publications.css';
 import './brand.css';
 import './system.css';
 import Shell from './shell';
-export const metadata: Metadata = { title: 'CIMATEC Finance | Conhecimento que conecta.', description: 'Uma iniciativa estudantil do SENAI CIMATEC para aproximar universitários da Bahia do mercado financeiro. Formação, tecnologia, projetos e conexões.' };
+export const metadata: Metadata = { title: 'cimatec finance | Liga acadêmica de mercado financeiro', description: 'Uma iniciativa estudantil do SENAI CIMATEC para aproximar universitários da Bahia do mercado financeiro. Formação, tecnologia, projetos e conexões.' };
 export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="pt-BR"><body><Shell>{children}</Shell></body></html>}
