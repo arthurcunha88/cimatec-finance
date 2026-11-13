@@ -29,7 +29,7 @@ export default function Shell({children}:{children:React.ReactNode}) {
  return <>
  <a className="skip" href="#conteudo">Pular para o conteúdo</a>
  <header className="header scroll-header" data-hidden={hidden && !open}>
- <a className="header-brand" href="/" aria-label="CIMATEC Finance, início"><img className="brand-image" src="/brand/logo.svg" alt="CIMATEC Finance" width="110" height="64"/><span className="header-wordmark" aria-hidden="true"><span>CIMATEC</span><em>finance</em></span></a>
+ <a className="header-brand" href="/" aria-label="CIMATEC Finance, início"><img className="brand-image" src="/brand/logo.svg" alt="CIMATEC Finance" width="110" height="64"/><span className="header-wordmark" aria-hidden="true">Cimatec Finance</span></a>
  <button className="menu-toggle" aria-controls="navigation" aria-expanded={open} onClick={()=>setOpen(!open)}>{open ? "Fechar" : "Menu"}</button>
  <nav id="navigation" className={open?"nav open":"nav"} aria-label="Navegação principal" onKeyDown={event=>{if(event.key==="Escape"){setOpen(false);document.querySelector<HTMLButtonElement>(".menu-toggle")?.focus();}}}>
  {routes.map(([href,label])=><a key={href} href={href} aria-current={path.replace(/\/$/,"")===href.replace(/\/$/,"")?"page":undefined}>{label}</a>)}

@@ -30,3 +30,5 @@
   .header .header-brand .brand-image { width: 42px; height: 42px; }
   .header-wordmark { font-size: .8rem; }
 }
+ 
+.header .header-wordmark { font-family: "DM Sans", system-ui, sans-serif; font-weight: 800; font-size: clamp(.9rem, 2vw, 1.18rem); color: #d5b776; letter-spacing: -.025em; }
