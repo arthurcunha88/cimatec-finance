@@ -1,11 +1,6 @@
 "use client";
 import {useState,useRef} from "react";
-const fronts = [
-  { name: "Tech & Quant", label: "TECNOLOGIA APLICADA A FINANÇAS", title: "Dados. Código.\nNovas perspectivas.", text: "Uma frente para estudar finanças quantitativas e mapear tecnologias e automações viáveis para a iniciativa. Matemática, programação e pensamento analítico encontram as questões do mercado financeiro.", topics: ["Estudos em finanças quantitativas", "Mapeamento de tecnologias", "Automações e eficiência"] },
-  { name: "Processos e Projetos", label: "ESTRUTURA PARA FAZER ACONTECER", title: "Da intenção\nà execução.", text: "Organizar processos e dar forma a projetos é parte da construção da CIMATEC Finance. Esta frente conecta planejamento, acompanhamento e colaboração para transformar ideias em trabalho consistente.", topics: ["Organização de processos", "Planejamento de projetos", "Acompanhamento de iniciativas"] },
-  { name: "Comunicação", label: "CONHECIMENTO QUE CIRCULA", title: "Boas ideias\nprecisam de diálogo.", text: "Construir uma comunicação clara entre estudantes, iniciativa e mercado. Um espaço para compartilhar conhecimento, aproximar pessoas e fortalecer a identidade institucional da CIMATEC Finance.", topics: ["Comunicação institucional", "Relacionamento com a comunidade", "Compartilhamento de conhecimento"] },
-  { name: "Marketing", label: "PRESENÇA COM PROPÓSITO", title: "Uma iniciativa.\nMais alcance.", text: "Apresentar a CIMATEC Finance a quem pode fazer parte dessa construção. A frente de marketing trabalha a presença da iniciativa e a divulgação de suas propostas para o público universitário e o mercado.", topics: ["Posicionamento da iniciativa", "Divulgação de ações", "Conexão com novos públicos"] },
-];
+import { fronts } from "../fronts";
 const contact = (message: string) => `https://wa.me/5571996692006?text=${encodeURIComponent(message)}`;
 function Arrow() { return <span aria-hidden="true">↗</span>; }
 export default function Page(){

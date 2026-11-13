@@ -1,6 +1,7 @@
 "use client";
 import {useState} from "react";
 import Team from "./team";
+import AreaCarousel from "./area-carousel";
 import ContactCTA from "./contact-cta";
 export default function Home(){
  const [paused,setPaused]=useState(false);
@@ -17,6 +18,7 @@ export default function Home(){
    <p>Somos uma liga estudantil do SENAI CIMATEC, em Salvador. Aproximamos universitários da Bahia do mercado financeiro por meio de formação, projetos e conexões com profissionais do setor.</p>
    <a className="text-link" href="/iniciativa/">Conheça a iniciativa <span aria-hidden="true">↗</span></a>
  </section>
+ <AreaCarousel />
  <section className="section portal"><h2>Explore a CIMATEC Finance</h2><div className="portal-links"><a href="/iniciativa/">Iniciativa<span aria-hidden="true">↗</span></a>
 <a href="/atuacao/">Atuação<span aria-hidden="true">↗</span></a>
 <a href="/relatorios/">Relatórios<span aria-hidden="true">↗</span></a>
@@ -26,6 +28,12 @@ export default function Home(){
  <section className="section contact" aria-labelledby="home-contact-title">
    <h2 id="home-contact-title">Entre em contato com a liga</h2>
    <ContactCTA />
+ </section>
+ <section className="section home-newsletter" aria-labelledby="home-newsletter-title">
+   <p className="eyebrow">CIMATEC FINANCE MAIL</p>
+   <h2 id="home-newsletter-title">Newsletter da CIMATEC Finance</h2>
+   <p>Panorama de mercado, relatórios e novidades da liga, reunidos para leitura por e-mail.</p>
+   <a className="newsletter-button" href="/newsletter/">Conheça a newsletter <span aria-hidden="true">↗</span></a>
  </section>
  </>;
 }
