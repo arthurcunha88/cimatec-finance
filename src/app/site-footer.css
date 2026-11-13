@@ -24,3 +24,6 @@
 }
 @media (max-width: 600px) { .site-footer nav { column-gap: .25rem; } }
 @media (prefers-reduced-motion: reduce) { .site-footer nav .footer-icon { transition: none; } }
+
+.site-footer nav .footer-copy { display:inline-flex; align-items:center; min-height:44px; background:transparent; color:#f2eee4; cursor:pointer; }
+.footer-copy-status:not(:empty) { flex-basis:100%; text-align:center; color:#d5b776; font-size:.8rem; overflow-wrap:anywhere; }
